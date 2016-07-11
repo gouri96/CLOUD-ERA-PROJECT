@@ -1,0 +1,127 @@
+div.register
+{
+	width:100%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	background:grey;
+	z-index: -1;
+	opacity: 0.5;	
+}
+
+form
+{
+position: absolute;
+top:20%;
+left: 25%;
+width:45%;
+height: 60%;
+color:white;
+background:url(/web/b2.jpg);
+background-size: 100% 100%;
+background-repeat: no-repeat;
+opacity: 1;
+border-radius: 10px;
+
+
+
+
+}
+
+
+}
+div.box
+{
+margin-top: 15%;
+}
+p.a
+{
+	/*border:5px groove red;*/
+	color:red;
+	font-family: sans-serif;
+	font-size: 30px;
+	font-weight:bold;
+
+	margin: 5px 0px 0px 60px;
+	padding: none;
+}
+p.b
+{
+	/*border:5px groove red;*/
+	color: black;
+	font-family: sans-serif;
+	margin-left: 30px;
+	margin-top: 10px;
+
+}
+input
+{
+	width: 60%;
+	color: brown;
+	text-decoration: bold;
+	font-size: 18px;
+	font-family: sans-serif;
+	border-radius: 6px;
+	border-color: blue;
+    margin-bottom: 5px;
+	margin-left: 10%;
+	border-radius: 10px
+
+
+}
+select
+{
+	width: 60%;
+	margin-left: 10%;
+	margin-bottom: 5px;
+	background: white;
+	font-size: 18px;
+	border-radius: 6px;
+	font-weight: 40%;
+
+
+}
+option
+{
+	width: 100%;
+	font-size: 18px;
+	border-radius: 6px;
+	background: white;
+
+}
+.sub
+{
+	width: 20%;
+	background:#40a4df;
+	color: white;
+	box-shadow: 10px 10px 10px grey;
+	margin-top: 10px;
+	margin-left: 10%;
+	
+	/*border:5px groove red;*/
+}
+@keyframes slidein {
+  from {
+    margin-left: 25%;
+    width: 50%; 
+  }
+
+  to {
+    margin-left: 5%;
+    width: 100%;
+  }
+}
+.m
+{
+	margin-top: 5px;
+	color: red;
+	display: inline;
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 5%;
+	animation-duration: 3s;
+    animation-name: slidein;
+	/*border:5px groove red;*/
+	 
+}

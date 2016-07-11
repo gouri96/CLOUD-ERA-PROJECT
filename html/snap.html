@@ -1,0 +1,51 @@
+<style type="text/css">
+input
+{
+	width: 100%;
+	color: brown;
+	text-decoration: bold;
+	font-size: 18px;
+	font-family: sans-serif;
+	border-radius: 6px;
+	border-color: grey;
+    margin-bottom: 5px;
+    background: white;
+}
+.sub
+{
+	width: 15%;
+	background:#40a4df;
+	color: white;
+	box-shadow: 10px 10px 10px grey;
+
+	margin-left: 20%;
+	
+	/*border:5px groove red;*/
+}	
+td
+{
+	font-size: 25px;
+color:brown;
+font-weight:bold;
+}
+
+form
+{
+margin-top:50px;
+}
+
+</style>
+
+
+
+<center>
+<form action="http://192.168.122.1/cgi-bin/snap.py" method="POST">
+<table>
+<tr><td>storage name</td><td><input type="text" name="lvname" /></td></tr>
+<tr><td>snapshot name</td><td><input type="text" name="sname"></td></tr>
+</table>
+<input class="sub" type="submit" value="save backup">
+
+</center>
+
+</form>

@@ -1,0 +1,113 @@
+
+
+<style type="text/css">
+
+div.a
+{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 25%;
+	background:#bc8d88;
+}
+form
+{
+	position: absolute;
+	top: 25%;
+	left:0%;
+	width: 30%;
+	height: 75%;
+	padding-top: 10%;
+	background: url(/web/b2.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	
+}
+	
+input.a
+{
+	width: 100%;
+	color: brown;
+	text-decoration: bold;
+	font-size: 18px;
+	font-family: sans-serif;
+	border-radius: 6px;
+	border-color: grey;
+    margin-bottom: 5px;
+    background: white;
+}
+img.i1
+{
+	position: absolute;
+	top: 2%;
+	left: 5%;
+	width: 250px;
+	height: 250px;
+}
+img.i2
+{
+	position: absolute;
+	top: 45%;
+	left: 70%;
+	width: 350px;
+	height: 350px;
+	z-index: 1;
+}
+.sub
+{
+	width: 30%;
+	background:#40a4df;
+	color: white;
+	box-shadow: 10px 10px 10px grey;
+	border-radius: 6px;
+	margin-left: 50%;
+	margin-top: 10px;
+	font-size: 20px;
+	
+	/*border:5px groove red;*/
+}
+p.p1
+{
+	font-size: 40px;
+	margin-left: 23%;
+	margin-top: 4%;
+}
+td
+{
+	font-size: 20px;
+	font-weight: bold;
+}
+iframe
+{
+	position: absolute;
+	top: 25%;
+	left:30%;
+	width: 70%;
+	height: 97%;
+	border:none;
+	background: url(/web/b2.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+
+}
+
+
+</style>
+<div class="a">
+	<p class="p1">WELCOME TO CONTAINER AS A SERVICE</p>
+</div>
+<iframe name="docker" src="http://192.168.122.1/container.html"> 
+
+</iframe>
+<form action="http://192.168.122.1/cgi-bin/container.py" method="POST" target="docker">
+	<table>
+	<tr><td>Numbers</td><td><input class="a" type="text" name="n"/></td></tr>
+	<tr><td>TypeOfContainer</td><td><input class="a" type="text" name="type"/></td></tr>
+	<tr><td>UserName</td><td><input class="a" type="text" name="user"/></td></tr>
+	<tr><td>Password</td><td><input class="a" type="password" name="pas"/></td></tr>
+	</table>
+	<input class="sub" type="submit" value="Launch">
+</form>
+<img  class="i1" src="/web/c1.png">
+<img  class="i2" src="/web/d3.png">

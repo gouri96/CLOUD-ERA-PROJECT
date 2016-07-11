@@ -1,0 +1,62 @@
+<style type="text/css">
+	
+	input
+{
+	width: 100%;
+	color: brown;
+	text-decoration: bold;
+	font-size: 18px;
+	font-family: sans-serif;
+	border-radius: 6px;
+	border-color: grey;
+    margin-bottom: 5px;
+    background: white;
+}
+.sub
+{
+	width: 10%;
+	background:#40a4df;
+	color: white;
+	box-shadow: 10px 10px 10px grey;
+
+	margin-left: 10%;
+	
+	/*border:5px groove red;*/
+}
+select
+{
+width: 200px;
+border:2px groove black;
+border-radius: 10px 5px;
+box-shadow: 10px 10px 10px grey;
+margin: 10px 10px 20px 40px;
+}
+option
+{
+width: 200px;
+border:2px groove black;
+border-radius: 10px 5px;
+margin-bottom: 2px;
+}
+
+}
+</style>
+
+
+
+<form action="http://192.168.122.1/cgi-bin/autos.py" method="POST">
+	<select name="os">
+		<option value="redhat6">Redhat6</option>
+		<option value="redhat6_terminal">Redhat_terminal</option>
+		<option value="windows">Windows7</option>
+		<option value="kalilinux">kali-linux</option>
+		<option value="ubuntu">Ubuntu</option>
+	</select>
+	<table>
+	<tr><td>OS name</td><td><input type="text" name="osn"/></td></tr>
+	<tr><td>Ram</td><td><input type="text" name="ram"/></td></tr>
+	<tr><td>CPU</td><td><input type="text" name="cpu" /></td></tr>
+	<tr><td>Disk</td><td><input type="text" name="disk" /></td></tr>
+	</table>
+	<input class="sub" type="submit" value="Proceed">
+</form>

@@ -1,0 +1,75 @@
+<link type="text/css" rel="stylesheet" href="http://192.168.122.1/home.css"></link>
+
+<style type="text/css">
+	
+input.a
+{
+	width: 100%;
+	color: brown;
+	text-decoration: bold;
+	font-size: 18px;
+	font-family: sans-serif;
+	border-radius: 6px;
+	border-color: grey;
+    margin-bottom: 5px;
+    background: white;
+}
+.sub
+{
+	width: 30%;
+	background:#40a4df;
+	color: white;
+	box-shadow: 10px 10px 10px grey;
+	margin-left: 10%;
+	
+	/*border:5px groove red;*/
+}
+
+form
+{
+	position: absolute;
+	top:30%;
+	left:50%;
+}
+
+}
+</style>
+
+<div class="top">
+		<div class="top1">
+		<img class="i1" src="/web/link.png">
+		<img class="i1" src="/web/tw.png">
+		<img class="i1" src="/web/f.png">
+		<img class="i1" src="/web/gog.png">
+		</div>
+
+	<input class="top" type="text" placeholder="google search"/><a class="go" href="http://www.google.com">Go</a>
+		<select class="s1">
+			<option class="o1">English</option>
+			<option class="o1">Hindi</option>
+			<option class="o1">spanish</option>
+		</select>
+	</div>
+
+
+
+
+<form action="http://192.168.122.1/cgi-bin/os.py" method="POST">
+	<select name="os">
+		<option value="redhat">Redhat</option>
+		<option value="windows">Windows7</option>
+		<option value="fedora">fedora14</option>
+		<option value="kalilinux">kali-linux</option>
+		<option value="ubuntu">Ubuntu</option>
+		<option value="centos">CentOs</option>
+
+
+	</select>
+	<table>
+	<tr><td>OS name</td><td><input type="text" name="osn"/></td></tr>
+	<tr><td>Ram</td><td><input type="text" name="ram"/></td></tr>
+	<tr><td>CPU</td><td><input type="text" name="cpu" /></td></tr>
+	<tr><td>Disk</td><td><input type="text" name="disk" /></td></tr>
+	</table>
+	<input class="sub" type="submit" value="Proceed">
+</form>

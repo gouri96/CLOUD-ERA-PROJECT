@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cloud</title>
+	<link type="text/css" rel="stylesheet" href="http://192.168.122.1/home.css"></link>	
+</head>
+<body>
+<script language="JavaScript">
+var i = 0;
+var path = new Array();
+path[0] = "/web/c3.jpg";
+path[1] = "/web/c5.jpg";
+path[2] = "/web/c6.jpg";
+path[3] = "/web/images.png";
+path[4] = "/web/pc.png";
+function swapImage()
+{
+   document.slide.src = path[(i+3)%5];
+   document.slide1.src = path[(i+4)%5];
+   document.slide2.src = path[(i+2)%5];
+   document.slide3.src = path[i%5];
+   document.slide4.src = path[(i+1)%5];
+  	if(i < path.length - 1) 
+   	i++; 
+	else 
+	i = 0;
+   setTimeout("swapImage()",2000);
+}
+window.onload=swapImage;
+</script>
+
+	<div class="top">
+		<div class="top1">
+		<img class="i1" src="/web/link.png">
+		<img class="i1" src="/web/tw.png">
+		<img class="i1" src="/web/f.png">
+		<img class="i1" src="/web/gog.png">
+		</div>
+
+	<input class="top" type="text" placeholder=" google search"/><a class="go" href="http://www.google.com">Go</a>
+		<select class="s1">
+			<option class="o1">English </option>
+			<option class="o1">Hindi</option>
+			<option class="o1">spanish</option>
+		</select>
+	</div>
+	<div class="two">
+		<img name="slide" src="/web/images.png">
+		<img name="slide1" src="/web/pc.png">
+		<img name="slide2" src="/web/c3.jpg">
+		<img name="slide3" src="/web/c5.jpg">
+		<img name="slide4" src="/web/c6.jpg">
+
+	</div>
+	<div class="three">
+		<div class="dmenu">
+		<a class="menu" href="">HOME</a>
+		<a class="menu" href="">NEWS</a>
+		<a class="menu" href="">PROFILES</a>
+		<select class="s2">
+			<a href=""><option class="o2">SERVICES</option></a>
+			<a href="http://192.168.122.1/saas.html"><option class="o2">SAAS</option></a>
+			<a href=""><option class="o2">STAAS</option></a>
+			<a href=""><option class="o2">IAAS</option></a>
+			<a href=""><option class="o2">CAAS</option></a>
+			<a href=""><option class="o2">PAAS</option></a>
+			<a href=""><option class="o2">DAAS</option></a>	
+		</select>
+		<a class="menu" href="">ABOUT US</a>
+		<a class="menu" href="">CONTACT US</a>
+		</div>
+
+		<a target="_self" href="http://192.168.122.1/registration.html"><button  class="ab" >sign up</button></a>
+		 <a target="_self" href="http://192.168.122.1/login.html"><button class="ab1">Login</button></a>
+	</div>
+	<div class="four">
+		<a href='' class="amenu1">About Services</a>
+		<a class='amenu' target="front" href='b1.html'>SAAS</a>
+		<a class='amenu' target="front" href='b5.html'>STAAS</a>
+		<a class='amenu' target="front" href='b3.html'>IAAS</a>
+		<a class='amenu' target="front" href='b4.html'>CAAS</a>
+		<a class='amenu' target="front" href='b2.html'>PAAS</a>
+		<a class='amenu' href=''>DAAS</a>
+
+	</div>
+	<iframe name="front"></iframe>
+	<div class="footer">
+		
+
+	</div>
+
+</body>
+</html>
